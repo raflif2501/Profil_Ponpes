@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Struktur;
+use App\Models\Konten;
 
 class HomeController extends Controller
 {
@@ -23,6 +25,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $data = Struktur::all();
+        $data1 = Konten::all();
+        return view('admin.index',compact('data','data1'));
     }
 }
