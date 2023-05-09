@@ -74,11 +74,10 @@
                     data-aos="fade-up" data-aos-delay="200">
                     <h1>Pondok Pesantren</h1>
                     <h1>Mathali'ul Anwar</h1>
-                    <h2>Jl. Kartini VI/09 Pangarangan Sumenep </h2>
+                    {{-- <h2>Jl. Kartini VI/09 Pangarangan Sumenep </h2> --}}
                     <div class="d-flex justify-content-center justify-content-lg-start">
-                        <a href="#sejarah" class="btn-get-started scrollto">Profil Ponpes</a>
-                        {{-- <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i
-                                class="bi bi-play-circle"></i><span>Watch Video</span></a> --}}
+                        <a href="{{ route('pendaftaran.index') }}" class="btn-get-started scrollto">Pendaftaran Santri
+                            PP Mathali'ul Anwar</a>
                     </div>
                 </div>
                 <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
@@ -86,6 +85,7 @@
                         width="360px" height="auto" float="right">
                 </div>
             </div>
+            <br>
         </div>
 
     </section><!-- End Hero -->
@@ -95,6 +95,8 @@
         <!-- ======= Cliens Section ======= -->
         <section id="cliens" class="cliens section-bg">
             <div class="container">
+                {{-- <marquee scrollamount="10">PONDOK PESANTREN MATHALI'UL ANWAR Jl. Kartini VI/09 Pangarangan Sumenep
+                </marquee> --}}
                 <br><br><br>
             </div>
         </section><!-- End Cliens Section -->

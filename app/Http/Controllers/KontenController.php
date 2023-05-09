@@ -16,6 +16,11 @@ class KontenController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('role:superadmin|admin');
+    }
     public function index()
     {
         $data = Konten::all();
@@ -141,10 +146,10 @@ class KontenController extends Controller
 
         if($data){
         Alert::success('Success', 'Data Berhasil Dirubah');
-        return redirect()->route('produk.index');
+        return redirect()->route('konten.index');
         }else{
         Alert::error('Gagal', 'Data Gagal Dirubah');
-        return redirect()->route('produk.index');
+        return redirect()->route('konten.index');
         }
     }
 

@@ -18,6 +18,7 @@ class StrukturController extends Controller
     public function __construct()
     {
         $this->middleware('auth');
+        $this->middleware('role:superadmin|admin');
     }
     public function index()
     {
@@ -78,7 +79,7 @@ class StrukturController extends Controller
     public function edit($id)
     {
         $data = Struktur::find($id);
-        return view('struktur.edit');
+        return view('struktur.edit', compact('data'));
     }
 
     /**

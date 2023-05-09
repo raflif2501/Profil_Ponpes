@@ -35,7 +35,7 @@
                         <div class="col-md-8">
                             <div class="mb-4">
                                 <h3>Login</h3>
-                                <p class="mb-4">Hanya admin yang terdaftar yang bisa melakukan login</p>
+                                <p class="mb-4">Silahkan Masuk</p>
                             </div>
                             <form method="POST" action="{{ route('login') }}">
                                 @csrf
@@ -59,15 +59,17 @@
                                 </div>
                                 <input type="submit" value="Log In" class="btn btn-block btn-primary">
                             </form>
+                            <div class="col-12">
+                                <span>Belum punya akun ? </span><a href="{{ route('register') }}"
+                                    class="text-center">Buat Disini</a>
+                            </div>
                         </div>
                     </div>
-
                 </div>
 
             </div>
         </div>
     </div>
-
 
     <script src="{{ asset('loginn') }}/js/jquery-3.3.1.min.js"></script>
     <script src="{{ asset('loginn') }}/js/popper.min.js"></script>

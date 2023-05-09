@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin | PONPES MATHALI'UL ANWAR</title>
+    <title>PONPES MATHALI'UL ANWAR</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('admin') }}/dist/img/logo.png">
 
     <!-- Google Font: Source Sans Pro -->
@@ -69,6 +69,12 @@
                             <h5>
                                 {{ Auth::user()->name }}
                             </h5>
+                            @php
+                                $id = Auth::user()->id;
+                            @endphp
+                            @role('superadmin')
+                                <a href="{{ route('users.edit', $id) }}"><u>Edit Profile</u></a>
+                            @endrole
                         </li>
                         <li class="user-footer">
                             <div class="pull-right">
@@ -110,24 +116,76 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-                        <li class="nav-item">
-                            <a href="{{ route('home') }}" class="nav-link">
-                                <i class="nav-icon fas fa-home"></i>
-                                <p>Dashboard</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('konten.index') }}" class="nav-link">
-                                <i class="nav-icon fas fa-tasks"></i>
-                                <p>Berita</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ route('struktur.index') }}" class="nav-link">
-                                <i class="nav-icon fas fa-users"></i>
-                                <p>Stuktur</p>
-                            </a>
-                        </li>
+                        @role('superadmin|admin')
+                            <li class="nav-item">
+                                <a href="{{ route('home') }}" class="nav-link">
+                                    <i class="nav-icon fas fa-home"></i>
+                                    <p>Dashboard</p>
+                                </a>
+                            </li>
+                            <li class="nav-header">PROFIL</li>
+                            <li class="nav-item">
+                                <a href="{{ route('konten.index') }}" class="nav-link">
+                                    <i class="nav-icon fas fa-tasks"></i>
+                                    <p>Berita</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('struktur.index') }}" class="nav-link">
+                                    <i class="nav-icon far fa-list-alt"></i>
+                                    <p>Struktur</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('penerimaan.index') }}" class="nav-link">
+                                    <i class="nav-icon fas fa-user-check"></i>
+                                    <p>Penerimaan</p>
+                                </a>
+                            </li>
+                            <li class="nav-header">DATA SANTRI</li>
+                            <li class="nav-item">
+                                <a href="{{ route('santri.index') }}" class="nav-link">
+                                    <i class="nav-icon fas fa-user"></i>
+                                    <p>Santri</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('orang.index') }}" class="nav-link">
+                                    <i class="nav-icon fas fa-user-friends"></i>
+                                    <p>Orang Tua</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="{{ route('wali.index') }}" class="nav-link">
+                                    <i class="nav-icon fas fa-user-tag"></i>
+                                    <p>Wali</p>
+                                </a>
+                            </li>
+                        @endrole
+                        @role('user')
+                            <li class="nav-header">PENDAFTARAN</li>
+                            <li class="nav-item">
+                                <a href="{{ route('pendaftaran.index') }}" class="nav-link">
+                                    <i class="nav-icon fas fa-user-plus"></i>
+                                    <p>Pendaftaran Santri</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/cetak_pdf" class="nav-link">
+                                    <i class="nav-icon fas fa-file-pdf"></i>
+                                    <p>Cetak Bukti Pendaftaran</p>
+                                </a>
+                            </li>
+                        @endrole
+                        @role('superadmin')
+                            <li class="nav-header">DATA Admin</li>
+                            <li class="nav-item">
+                                <a href="{{ route('users.index') }}" class="nav-link">
+                                    <i class="nav-icon fas fa-users"></i>
+                                    <p>Admin</p>
+                                </a>
+                            </li>
+                        @endrole
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
