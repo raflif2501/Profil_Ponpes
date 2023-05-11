@@ -15,6 +15,8 @@ class VerifyCsrfToken extends Middleware
             'santri',
             'santri/*',
             'pendaftaran',
-            'pendaftaran/*'
+            'pendaftaran/*',
+            'konten',
+            'konten/*'
     ];
 }

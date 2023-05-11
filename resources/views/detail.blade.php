@@ -82,15 +82,86 @@
                         </center>
                         <hr>
                         <div class="table-responsive">
-                            <img src="{{ asset('image') }}/{{ $data1->gambar }}" alt="{{ $data1->judul }}">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="{{ asset('image') }}/{{ $data1->gambar }}" class="d-block w-100"
+                                            alt="{{ $data1->judul }}">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image1') }}/{{ $data1->gambar1 }}" class="d-block w-100"
+                                            alt="{{ $data1->judul }}">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image2') }}/{{ $data1->gambar2 }}" class="d-block w-100"
+                                            alt="{{ $data1->judul }}">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image3') }}/{{ $data1->gambar3 }}" class="d-block w-100"
+                                            alt="{{ $data1->judul }}">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image4') }}/{{ $data1->gambar4 }}" class="d-block w-100"
+                                            alt="{{ $data1->judul }}">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image5') }}/{{ $data1->gambar5 }}" class="d-block w-100"
+                                            alt="{{ $data1->judul }}">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image6') }}/{{ $data1->gambar6 }}" class="d-block w-100"
+                                            alt="{{ $data1->judul }}">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image7') }}/{{ $data1->gambar7 }}" class="d-block w-100"
+                                            alt="{{ $data1->judul }}">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image8') }}/{{ $data1->gambar8 }}" class="d-block w-100"
+                                            alt="{{ $data1->judul }}">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image9') }}/{{ $data1->gambar9 }}" class="d-block w-100"
+                                            alt="{{ $data1->judul }}">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="{{ asset('image10') }}/{{ $data1->gambar10 }}"
+                                            class="d-block w-100" alt="{{ $data1->judul }}">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row gy-4">
                     <div class="col-lg-6">
                         <div class="portfolio-description">
-                            <p class="fst-italic" style="text-align: justify; text-indent: 0.5in;">
-                                {{ $data1->isi }}</p>
+                            &emsp;&emsp;&emsp;{{ $data1->isi }}
+                        </div>
+                        <div class="portfolio-description">
+                            &emsp;&emsp;&emsp;{{ $data1->isi1 }}
+                        </div>
+                        <div class="portfolio-description">
+                            &emsp;&emsp;&emsp;{{ $data1->isi2 }}
+                        </div>
+                        <div class="portfolio-description">
+                            &emsp;&emsp;&emsp;{{ $data1->isi3 }}
+                        </div>
+                        <div class="portfolio-description">
+                            &emsp;&emsp;&emsp;{{ $data1->isi4 }}
+                        </div>
+                        <div class="portfolio-description">
+                            &emsp;&emsp;&emsp;{{ $data1->isi5 }}
                         </div>
                     </div>
                     <span>{{ $data1->tanggal }}</span>

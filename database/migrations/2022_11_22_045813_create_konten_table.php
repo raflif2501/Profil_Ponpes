@@ -16,9 +16,24 @@ class CreateKontenTable extends Migration
         Schema::create('kontens', function (Blueprint $table) {
             $table->id();
             $table->string('judul');
-            $table->string('gambar');
             $table->string('tanggal');
+            $table->string('gambar');
+            $table->string('gambar1')->nullable();
+            $table->string('gambar2')->nullable();
+            $table->string('gambar3')->nullable();
+            $table->string('gambar4')->nullable();
+            $table->string('gambar5')->nullable();
+            $table->string('gambar6')->nullable();
+            $table->string('gambar7')->nullable();
+            $table->string('gambar8')->nullable();
+            $table->string('gambar9')->nullable();
+            $table->string('gambar10')->nullable();
             $table->string('isi');
+            $table->string('isi1')->nullable();
+            $table->string('isi2')->nullable();
+            $table->string('isi3')->nullable();
+            $table->string('isi4')->nullable();
+            $table->string('isi5')->nullable();
             $table->timestamps();
         });
     }

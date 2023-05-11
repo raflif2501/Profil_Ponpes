@@ -16,6 +16,8 @@ class WelcomeController extends Controller
      }
      public function detail($id){
         $data1 = Konten::find($id);
+        // var_dump($data1);
+        // die;
         return view('detail',compact('data1'));
      }
 }

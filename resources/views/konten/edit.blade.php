@@ -32,11 +32,103 @@
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">
-                                <label>Gambar</label>
+                                <label>Gambar 1</label>
                                 <input type="file" name="gambar" class="form-control" placeholder="Masukkan Gambar"
                                     value="{{ $data->gambar }}">
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Gambar 2</label>
+                                <input type="file" name="gambar1" class="form-control" placeholder="Masukkan Gambar"
+                                    value="{{ $data->gambar1 }}">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Gambar 3</label>
+                                <input type="file" name="gambar2" class="form-control" placeholder="Masukkan Gambar"
+                                    value="{{ $data->gambar2 }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Gambar 4</label>
+                                <input type="file" name="gambar3" class="form-control" placeholder="Masukkan Gambar"
+                                    value="{{ $data->gambar3 }}">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Gambar 4</label>
+                                <input type="file" name="gambar4" class="form-control" placeholder="Masukkan Gambar"
+                                    value="{{ $data->gambar4 }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Gambar 5</label>
+                                <input type="file" name="gambar5" class="form-control" placeholder="Masukkan Gambar"
+                                    value="{{ $data->gambar5 }}">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Gambar 6</label>
+                                <input type="file" name="gambar6" class="form-control" placeholder="Masukkan Gambar"
+                                    value="{{ $data->gambar6 }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Gambar 7</label>
+                                <input type="file" name="gambar7" class="form-control" placeholder="Masukkan Gambar"
+                                    value="{{ $data->gambar7 }}">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Gambar 8</label>
+                                <input type="file" name="gambar8" class="form-control" placeholder="Masukkan Gambar"
+                                    value="{{ $data->gambar8 }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Gambar 9</label>
+                                <input type="file" name="gambar9" class="form-control" placeholder="Masukkan Gambar"
+                                    value="{{ $data->gambar9 }}">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- text input -->
+                            <div class="form-group">
+                                <label>Gambar 10</label>
+                                <input type="file" name="gambar10" class="form-control" placeholder="Masukkan Gambar"
+                                    value="{{ $data->gambar10 }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
                         <div class="col-sm-12">
                             <!-- text input -->
                             <div class="form-group">

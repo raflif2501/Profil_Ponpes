@@ -40,9 +40,13 @@
                         <div class="col-sm-6">
                             <!-- text input -->
                             <div class="form-group">
-                                <label>Awalan</label>
-                                <input type="text" name="gelar" class="form-control" placeholder="Masukkan Gelar"
-                                    value="{{ $data->gelar }}">
+                                <label>Nama Awalan</label>
+                                <select name="gelar" id="cars">
+                                    <option value="{{ $data->gelar }}">{{ $data->gelar }}</option>
+                                    <option value="KH.">KH.</option>
+                                    <option value="Ust.">Ust.</option>
+                                    <option value="Gus">Gus</option>
+                                </select>
                             </div>
                         </div>
                         <div class="card-footer" style="float: right">

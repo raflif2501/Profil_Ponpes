@@ -16,9 +16,24 @@
                             <thead>
                                 <tr>
                                     <th>No</th>
-                                    <th width="350px">Gambar</th>
+                                    <th width="100px">Gambar 1</th>
+                                    <th width="100px">Gambar 2</th>
+                                    <th width="100px">Gambar 3</th>
+                                    <th width="100px">Gambar 4</th>
+                                    <th width="100px">Gambar 5</th>
+                                    <th width="100px">Gambar 6</th>
+                                    <th width="100px">Gambar 7</th>
+                                    <th width="100px">Gambar 8</th>
+                                    <th width="100px">Gambar 9</th>
+                                    <th width="100px">Gambar 10</th>
+                                    <th width="100px">Gambar 11</th>
                                     <th>Judul Kegiatan</th>
-                                    <th>Isi</th>
+                                    <th>Isi 1</th>
+                                    <th>Isi 2</th>
+                                    <th>Isi 3</th>
+                                    <th>Isi 4</th>
+                                    <th>Isi 5</th>
+                                    <th>Isi 6</th>
                                     <th>Tanggal</th>
                                     <th>Action</th>
                                 </tr>
@@ -31,9 +46,34 @@
                                     <tr>
                                         <td>{{ $no++ }}</td>
                                         <td><img src="{{ asset('image') }}/{{ $p->gambar }}" alt=""
-                                                width="20%"></td>
+                                                width="100px"></td>
+                                        <td><img src="{{ asset('image1') }}/{{ $p->gambar1 }}" alt=""
+                                                width="100px"></td>
+                                        <td><img src="{{ asset('image2') }}/{{ $p->gambar2 }}" alt=""
+                                                width="100px"></td>
+                                        <td><img src="{{ asset('image3') }}/{{ $p->gambar3 }}" alt=""
+                                                width="100px"></td>
+                                        <td><img src="{{ asset('image4') }}/{{ $p->gambar4 }}" alt=""
+                                                width="100px"></td>
+                                        <td><img src="{{ asset('image5') }}/{{ $p->gambar5 }}" alt=""
+                                                width="100px"></td>
+                                        <td><img src="{{ asset('image6') }}/{{ $p->gambar6 }}" alt=""
+                                                width="100px"></td>
+                                        <td><img src="{{ asset('image7') }}/{{ $p->gambar7 }}" alt=""
+                                                width="100px"></td>
+                                        <td><img src="{{ asset('image8') }}/{{ $p->gambar8 }}" alt=""
+                                                width="100px"></td>
+                                        <td><img src="{{ asset('image9') }}/{{ $p->gambar9 }}" alt=""
+                                                width="100px"></td>
+                                        <td><img src="{{ asset('image10') }}/{{ $p->gambar10 }}" alt=""
+                                                width="100px"></td>
                                         <td>{{ $p->judul }}</td>
                                         <td>{{ $p->isi }}</td>
+                                        <td>{{ $p->isi1 }}</td>
+                                        <td>{{ $p->isi2 }}</td>
+                                        <td>{{ $p->isi3 }}</td>
+                                        <td>{{ $p->isi4 }}</td>
+                                        <td>{{ $p->isi5 }}</td>
                                         <td>{{ $p->tanggal }}</td>
                                         <td>
                                             <form action="{{ route('konten.destroy', $p->id) }}" method="post"
